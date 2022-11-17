@@ -1,0 +1,89 @@
+@import "/sass/utils/variables";
+
+header
+{
+    background-color: var(--white);
+    border-radius: 0px;
+    border-bottom: solid 1px #ececec;
+
+    ul
+    {
+        display: flex;
+    }
+}
+
+header .container
+{
+    display: flex;
+    justify-content: space-between;
+    padding: calc((80px - 48px) / 2) 0;
+
+    &__container :nth-child(1)
+    {
+        display: flex;
+        align-items: center;
+    }
+}
+
+/*stilos del encabezado-header*/
+.logo__web
+{
+    color: var(--blue);
+    font-size: 26px;
+    font-family: "Raleway";
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 93px;
+}
+
+.style__link
+{
+    color: var(--darkgray);
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+.contact
+{
+    color: var(--gray);
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    padding-left: 0;
+
+    &__icons
+    {
+        width: 16px;
+        height: 16px;
+        fill: var(--grayishblue);
+        margin-right: 10px;
+    }
+}
+
+.style__link.contact
+{
+    color: var(--gray);
+}
+
+.underline::after
+{
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 4px;
+    background-color: var(--blue);
+    border-radius: 2px;
+    visibility: hidden;
+    margin-top: 76px;
+    transition: transform 0.5s ease;
+}
+
+.general--hover:hover.underline::after
+{
+    visibility: visible;
+    transform-origin: left;
+}

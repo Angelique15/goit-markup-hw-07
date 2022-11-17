@@ -61,6 +61,7 @@ label {
   font-size: 12px;
   letter-spacing: 0.03em;
 }
+
 input,
 textarea {
   box-sizing: border-box;
@@ -88,9 +89,11 @@ textarea {
   border-color: var(--blue);
   color: var(--blue);
 }
+
 .general--hover:hover:hover .min__icon {
   fill: var(--blue);
 }
+
 /*stilos del encabezado*/
 .logo__web {
   color: var(--blue);
@@ -127,6 +130,7 @@ textarea {
   visibility: visible;
   transform-origin: left;
 }
+
 .contact {
   color: var(--gray);
   text-decoration: none;
@@ -307,12 +311,14 @@ textarea {
   min-height: 21px;
   font-style: normal;
 }
+
 /*portafolio footer*/
 .media__title {
   color: var(--white);
   font-size: 14px;
   margin-left: 116px;
 }
+
 /*ESTILOS DEL PORTFOLIO*/
 /*estilos de los botones*/
 .section-5 ul {
@@ -375,14 +381,16 @@ textarea {
   cursor: pointer;
 }
 
-.project__board > h3 {
+.project__board>h3 {
   height: 32px;
   width: 322px;
 }
-.project__board > h4 {
+
+.project__board>h4 {
   height: 20px;
   width: 322px;
 }
+
 .name__project {
   letter-spacing: 0.06em;
   font-size: 18px;
@@ -400,6 +408,7 @@ textarea {
   padding-left: 24px;
   margin: 1px;
 }
+
 /*estilos de los vectores & imagen de fondo*/
 .container__fluid {
   height: 600px;
@@ -476,6 +485,7 @@ textarea {
   background-color: var(--blue);
   fill: var(--white);
 }
+
 /*iconos del footer*/
 .social-media__icon {
   width: 20px;
@@ -504,6 +514,7 @@ textarea {
 .media__link:hover {
   background-color: var(--blue);
 }
+
 /*estilos de la caja superpuesta de los proyectos*/
 .rising__box {
   position: absolute;
@@ -545,6 +556,7 @@ textarea {
   letter-spacing: 0.03em;
   font-weight: 700;
 }
+
 /*estilos de la ventana modal*/
 .pop-up-modal {
   z-index: 1;
@@ -573,6 +585,7 @@ textarea {
   padding: 8px;
   position: relative;
 }
+
 .form__text {
   font-weight: 700;
   font-size: 20px;
@@ -592,10 +605,12 @@ textarea {
   flex-direction: row-reverse;
   cursor: pointer;
 }
+
 .close__button:hover {
   color: var(--blue);
   border-color: var(--blue);
 }
+
 .send-section {
   margin-left: 78px;
   display: flex;
@@ -612,6 +627,7 @@ textarea {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 }
+
 .foot__button {
   width: 200px;
   height: 50px;
@@ -625,6 +641,7 @@ textarea {
   margin-left: 0;
   margin-top: 43px;
 }
+
 .subscribe__title {
   width: 275px;
   height: 16px;
@@ -633,6 +650,7 @@ textarea {
   letter-spacing: 0.03em;
   color: var(--white);
 }
+
 /*estilos de los iconos de la ventana modal*/
 .modal__icons {
   position: absolute;
@@ -641,6 +659,7 @@ textarea {
   margin-top: 25px;
   margin-left: 15px;
 }
+
 .check {
   width: 16px;
   height: 15px;
@@ -659,18 +678,19 @@ textarea {
   color: var(--gray);
   margin-left: 40px;
 }
+
 .modal__button {
   margin-left: 164px;
   margin-top: 30px;
 }
 
-.general--hover:hover + .modal__icons,
-.general--hover:focus + .modal__icons {
+.general--hover:hover+.modal__icons,
+.general--hover:focus+.modal__icons {
   fill: var(--blue);
   border: var(--blue);
 }
 
-input:checked + .modal__icons .check {
+input:checked+.modal__icons .check {
   border-color: var(--blue);
   background-color: var(--blue);
   fill: var(--white);
