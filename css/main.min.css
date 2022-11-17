@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+:root {
+  --white: #fff;
+  --black: #000;
+  --gray: #757575;
+  --blue: #2196f3;
+  --darkgray: #212121;
+  --grayishblue: #afb1b8;
+}
+
 /*a qué nos dedicamos estilos*/
 .section-3.container {
   background-color: var(--white);
