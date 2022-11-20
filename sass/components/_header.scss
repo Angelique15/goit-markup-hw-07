@@ -1,15 +1,10 @@
-@import "/sass/utils/variables";
+@import "../utils/variables";
 
 header
 {
-    background-color: var(--white);
+    background-color: $white;
     border-radius: 0px;
-    border-bottom: solid 1px #ececec;
-
-    ul
-    {
-        display: flex;
-    }
+    border-bottom: solid 1px $border-color;
 }
 
 header .container
@@ -17,18 +12,23 @@ header .container
     display: flex;
     justify-content: space-between;
     padding: calc((80px - 48px) / 2) 0;
-
-    &__container :nth-child(1)
-    {
-        display: flex;
-        align-items: center;
-    }
 }
 
-/*stilos del encabezado-header*/
+header .container :nth-child(1)
+{
+    display: flex;
+    align-items: center;
+}
+
+header ul
+{
+    display: flex;
+}
+
+/*stilos del encabezado*/
 .logo__web
 {
-    color: var(--blue);
+    color: $blue;
     font-size: 26px;
     font-family: "Raleway";
     font-weight: 700;
@@ -38,8 +38,8 @@ header .container
 
 .style__link
 {
-    color: var(--darkgray);
-    font-family: "Roboto";
+    color: $darkgray;
+    font-family: $occasionally-font;
     font-weight: 500;
     font-size: 14px;
     text-decoration: none;
@@ -47,26 +47,9 @@ header .container
     margin-right: 50px;
 }
 
-.contact
-{
-    color: var(--gray);
-    text-decoration: none;
-    font-weight: 500;
-    display: flex;
-    padding-left: 0;
-
-    &__icons
-    {
-        width: 16px;
-        height: 16px;
-        fill: var(--grayishblue);
-        margin-right: 10px;
-    }
-}
-
 .style__link.contact
 {
-    color: var(--gray);
+    color: $gray;
 }
 
 .underline::after
@@ -75,7 +58,7 @@ header .container
     position: absolute;
     width: 55px;
     height: 4px;
-    background-color: var(--blue);
+    background-color: $blue;
     border-radius: 2px;
     visibility: hidden;
     margin-top: 76px;
@@ -86,4 +69,21 @@ header .container
 {
     visibility: visible;
     transform-origin: left;
+}
+
+.contact
+{
+    color: $gray;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    padding-left: 0;
+
+    &__icons
+    {
+        width: 16px;
+        height: 16px;
+        fill: $grayishblue;
+        margin-right: 10px;
+    }
 }

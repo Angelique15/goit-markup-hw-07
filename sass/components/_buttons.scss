@@ -1,7 +1,6 @@
-@import "/sass/utils/variables";
+@import "../utils/variables";
 
-/*estilos de los botones*/
-/*botón del bg principal-solicitar servicio*/
+/*estilos del boton solicitar servicio*/
 .solutions__button
 {
     width: 261px;
@@ -10,8 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--blue);
-    color: var(--white);
+    background-color: $blue;
+    color: $white;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     outline: none;
@@ -22,10 +21,11 @@
     &:hover,
     &:focus
     {
-        background-color: var(--blue);
+        background-color: $blue;
     }
 }
 
+/*botones del portafolio*/
 .section-5 ul
 {
     display: flex;
@@ -39,7 +39,7 @@
     width: 100px;
     height: 38px;
     cursor: pointer;
-    background-color: #f5f4fa;
+    background-color: $light-grayish;
     font-size: 16px;
     font-weight: 500;
     border-radius: 4px;
@@ -52,11 +52,28 @@
     &:hover,
     &:focus
     {
-        background-color: var(--blue);
-        color: var(--white);
+        background-color: $blue;
+        color: $white;
         box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
             0px 2px 2px rgba(0, 0, 0, 0.12);
     }
+}
+
+/*botones de la ventana modal*/
+.modal__button
+{
+    margin-left: 164px;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;
+    background: $blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    color: $white;
+    cursor: pointer;
+    margin-top: 43px;
 }
 
 .close__button
@@ -65,7 +82,7 @@
     width: 30px;
     height: 30px;
     left: 490px;
-    background: var(--white);
+    background: $white;
     border-radius: 100%;
     border: 1px solid rgba(0, 0, 0, 0.1);
     flex-direction: row-reverse;
@@ -73,28 +90,24 @@
 
     &:hover
     {
-        color: var(--blue);
-        border-color: var(--blue);
+        color: $blue;
+        border-color: $blue;
     }
 }
+
+
 
 .foot__button
 {
     width: 200px;
     height: 50px;
-    background: #2196f3;
+    background: $blue;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     outline: none;
     border: none;
-    color: var(--white);
+    color: $white;
     cursor: pointer;
     margin-left: 0;
     margin-top: 43px;
-}
-
-.modal__button
-{
-    margin-left: 164px;
-    margin-top: 30px;
 }

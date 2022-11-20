@@ -1,7 +1,6 @@
-@import "/sass/utils/variables";
+@import "../utils/variables";
 
-/*sección clientes/costumers*/
-.costumer-section
+.costumer-svg
 {
     display: flex;
     justify-content: space-between;
@@ -9,16 +8,17 @@
 
 .client__container
 {
-    border: 1px var(--grayishblue) solid;
+    border: 1px $grayishblue solid;
     border-radius: 4px;
     width: 170px;
     height: 81px;
     padding: 14px 32px;
 
-    &__logo
-    {
-        height: 52px;
-        width: 106px;
-        fill: var(--grayishblue);
-    }
+}
+
+.client__logo
+{
+    height: 52px;
+    width: 106px;
+    fill: $grayishblue;
 }

@@ -1,20 +1,20 @@
-@import "/sass/utils/variables";
+@import "../utils/variables";
 
 /* estilos del footer*/
 footer
 {
-    background-color: #2f303a;
+    background-color: $bg-color;
     min-height: 252px;
+}
 
-    footer .container
-    {
-        display: flex;
-    }
+footer .container
+{
+    display: flex;
 }
 
 .list__city
 {
-    color: var(--white);
+    color: $white;
     letter-spacing: 0.03em;
     line-height: 24px;
     width: 231px;
@@ -33,9 +33,10 @@ footer
     font-style: normal;
 }
 
+/*iconos del footer*/
 .media__title
 {
-    color: var(--white);
+    color: $white;
     font-size: 14px;
     margin-left: 116px;
 }
@@ -50,37 +51,6 @@ footer
     justify-content: space-evenly;
 }
 
-/*sección de inscripción en el footer*/
-.send-section
-{
-    margin-left: 78px;
-    display: flex;
-    margin-left: 40px;
-    display: flex;
-
-    .subscribe__title
-    {
-        width: 275px;
-        height: 16px;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
-        color: var(--white);
-    }
-
-    .form__element
-    {
-        display: flex;
-        width: 358px;
-        height: 50px;
-        background-color: #2f303a;
-        border: 1px solid rgba(255, 255, 255, 0.3);
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-        border-radius: 4px;
-    }
-}
-
-/*iconos del footer*/
 .media__link
 {
     width: 44px;
@@ -89,11 +59,46 @@ footer
     padding: 12px;
     background-color: rgba(255, 255, 255, 0.1);
     cursor: pointer;
+}
 
-    .social-media__icon
-    {
-        width: 20px;
-        height: 20px;
-        fill: var(--white);
-    }
+.social-media__icon
+{
+    width: 20px;
+    height: 20px;
+    fill: $white;
+}
+
+.media__link:hover
+{
+    background-color: $blue;
+}
+
+/*form style*/
+.send-section
+{
+    margin-left: 78px;
+    display: flex;
+    margin-left: 40px;
+    display: flex;
+}
+
+.subscribe__title
+{
+    width: 275px;
+    height: 16px;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: $white;
+}
+
+.form__element
+{
+    display: flex;
+    width: 358px;
+    height: 50px;
+    background-color: $bg-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
 }

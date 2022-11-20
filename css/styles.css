@@ -466,7 +466,7 @@ textarea {
   justify-content: center;
 }
 
-.social-team__container {
+.social-team-section__container {
   width: 44px;
   height: 44px;
   border-radius: 22px;
@@ -475,15 +475,15 @@ textarea {
   fill: #afb1b8;
 }
 
-.social-team__icon {
+.social-team-section__container:hover {
+  background-color: var(--blue);
+  fill: var(--white);
+}
+
+.container__icon {
   width: 20px;
   height: 20px;
   cursor: pointer;
-}
-
-.social-team__container:hover {
-  background-color: var(--blue);
-  fill: var(--white);
 }
 
 /*iconos del footer*/
